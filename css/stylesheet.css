@@ -1,3 +1,4 @@
+
 body {
 	font-size: 17px;
 	font-family: 'Proxima Nova', Georgia, sans-serif;
@@ -28,7 +29,7 @@ a.fill-div {
 .sectionTitle {
 	margin-bottom: 30px;
 }
-#main-content h2:first-child{
+#main-content h1:first-child{
 	margin-bottom: 50px;
 	font-size: 50px;
 }
@@ -129,15 +130,15 @@ html, body {
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
-#email {
-	margin-bottom: 30px;
+#email, #name, #number, #dropdown {
+	margin-bottom: 20px;
 }
 #submit {
 	width: 100px;
 	height: 50px;
 	margin: 0 auto;
 }
-#email-label {
+#titleLabel {
 	text-align: center;
 	padding-bottom: 15px;
 }
@@ -147,7 +148,7 @@ input {
 label, input[type=submit]{
 	display: block;	
 }
-input[type=email] {
+input[type=email], input[type=text], input[type=number], #dropdown {
 	width: 300px;
 	padding: 10px;
 }
@@ -176,15 +177,21 @@ main {
 	float: left;
 	width: 200px;
 }
+#nav-bar {
+    position: fixed;
+    width: 100%;
+}
+#nav-bar ul {
+	float: right;
+	list-style-type: none;
+	line-height: 80px;
+}
 
 #nav-bar ul li{
-	float: right;
 	display: inline-block;
-	
-	list-style-type: none;
 	/* same as header height */
-	line-height: 140px;
-	padding-right: 100px;
+	padding-left: 100px;
+	padding-right:10px;
 }
 
 #nav-bar ul li a{
@@ -195,4 +202,10 @@ main {
 	text-decoration: none;
 	color: black;
 	font-size: 25px;
+}
+
+@media only screen and (max-width: 500px) {
+    #div6 {
+		display: none;
+    }
 }
